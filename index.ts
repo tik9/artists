@@ -5,10 +5,6 @@ dotenv.config()
 
 const app: Express = express()
 
-app.get('/', (req: Request, res) => {
-    ArtistController.search(req, res)
-})
+app.get('/', (req: Request, res) => { ArtistController.search(req, res) })
 
-app.listen(3000, () => {
-    console.log('runs')
-})
+app.listen(3000, () => { console.log('runs') })
